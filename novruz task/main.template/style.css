@@ -1,0 +1,451 @@
+body{
+    height: auto;
+}
+.headerTop{
+  text-align: center;
+    background-color: rgb(0, 196, 193);
+    height: auto;
+}
+.headerTop i{
+ font-size: 21px;
+ color:white;
+ padding: 6px;
+}
+.headerTop span{
+    color: white;
+}
+.menu a:hover{
+    
+    color: rgb(255, 204, 2) !important;
+}
+.hederIcon i{
+    font-size: 21px;
+    color: rgb(91, 91, 91)
+}
+#weDesign{
+    width: 100%;
+    height: 700px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ position: relative;
+}
+.mainBckgrd{
+    position: absolute;
+    height: 700px;
+    width: 100%;
+}
+.mainButtons1{
+    width: 170px;
+    height: 35px;
+  float: right;
+    color: white;
+    border:1px hidden gray;
+    border-radius: 16px;
+    background-color:  rgb(255, 204, 2);
+}
+.hoverIconn:hover .ikon{
+  background-color: rgb(255, 204, 2);
+  transition: all 1s ease 0.3;
+}
+.nav-link{
+    position: relative !important;
+}
+
+.hoverIconn:hover .ikon>i{
+    color: whitesmoke;
+    transition: all 1s ease 0.4s;
+}
+.mainPage1{
+    display: flex;
+    justify-content: center  !important;
+    flex-direction: column;
+}
+.mainButtons2{
+    width: 170px;
+    height: 35px;
+    color: white;
+    border:1px hidden gray;
+    border-radius: 16px;
+    background-color:  rgb(0, 196, 193);;
+}
+.mainButtons1:hover{
+    background-color: rgb(0, 196, 193);
+}
+.mainButtons2:hover{
+    background-color: rgb(255, 204, 2);
+}
+.mainPage1 h1,p{
+ text-align: center;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#iconContent{
+    height: auto;
+    text-align: center ;
+    background-color:rgb(226, 226, 226)
+}
+.ikon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ border: 1px solid gray;
+ border-radius:100%;
+ height: 60px;
+ width: 60px;
+ margin: auto;
+ 
+}
+#extraFeature{
+    height: auto;
+}
+.ikon i{
+  position: absolute;
+    font-size: 30px;
+}
+.iconLine{
+    list-style-type: none;
+}
+.iconLine i{
+    height: auto;
+font-size:18px;
+color: rgb(255, 204, 2);
+padding-right: 10px;
+padding-top: 10px;
+}
+.page3Button{
+    width: 110px;
+    height: 40px;
+    color: white;
+    border: 1px hidden rgb(255, 204, 2);
+    border-radius: 16px;
+    background-color: rgb(255, 204, 2);
+}
+.page3Button:hover{
+    background-color: white;
+    color: gray;
+    border:1px solid gray;
+}
+.statiscticData{
+    list-style-type: none;
+}
+#statistics{
+    height: auto;
+    display: flex;
+    align-items: center !important; 
+    background-color: rgb(0, 196, 193);
+}
+.statiscticData li {
+    font-size:35px;
+    color: white;
+}
+.page5after::after{
+    content: "";
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    background-color: #6c757d94
+}
+#amazingTemplate{
+    height: 700px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-image: url(../main.template/images/page-5.img);
+}
+.page5{
+    display: flex;
+    justify-content: center;
+}
+.page5content{
+   z-index: 1 
+}
+#ourGalery{
+    height: auto;
+}
+.head{
+    text-align: center
+}
+.head p{
+    width: 60px;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom: 3px solid rgb(255, 204, 2)
+}
+.page6{
+    height: auto;
+    width: 1140;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagesDiv{
+    width: 380px;
+   position: relative;
+    height: auto;
+    z-index:1;
+}
+.pag6Content{
+    width: 380px;
+    height: 280px;
+   position: absolute;
+   color: rgb(255, 204, 2);
+    z-index: 2;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-end
+}
+.imagess{
+    width: 380px;
+    height: 300px;
+    z-index: 0;
+    position: relative;
+}
+.imagesDiv::after{
+    width: 380px;
+    position: absolute;
+    height: 300px;
+    left: 5;
+    top: 0;
+    content: "";
+    z-index: 0;
+    background-color: #151514d9;
+    opacity: 0;
+}
+.imagesDiv:hover.imagesDiv::after{
+opacity: 1;
+transition: all 0.8s ease
+}
+.imagesDiv:hover .pag6Content{
+    opacity: 1;
+    transition: all 4s ease 0.8
+}
+.page6Button{
+    margin: auto;
+    width: 1140px;
+    margin-top: 30px;
+}
+#blog{
+    height: auto;
+    background-color:whitesmoke
+}
+.blogImg{
+    height: 80px;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+}
+.blogImg::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 80px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    background-image: url(../main.template/images/image.img)
+}
+.blogImg:hover.blogImg::after{
+opacity: 1;
+transition: all 0.8s ease 0.5s
+}
+.blogImg:hover .blogHeader{
+    color: white;
+    transition: all 0.8s ease 0.5s
+}
+.ikonHead{
+   display:flex;
+   align-items: center;
+   height: 60px;
+   justify-content: flex-start
+}
+.ikonHead>i{
+    font-size: 35px;
+    color: rgb(255, 204, 2);
+}
+.onlyIkon i{
+  font-size:30px;
+  color:rgb(226, 226, 226);
+}
+#logo{
+    height: auto;
+}
+.logos img{
+    height: 150px;
+    width: 150px;
+}
+#map{
+    height: auto;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 1463px;
+
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 1465px;
+    padding: 0px;
+    margin: auto;
+}
+.inputss{
+    position: absolute;
+    width: 859px;
+    height: 500px;
+    background: #17a2b8d9
+}
+.inputss input{
+    width: 280px;
+    float: left;
+    border:none;
+    color: white;
+    margin-left: 20px;
+    background: none;
+    outline: none;
+}
+.inputss h2{
+    box-sizing: border-box;
+    margin: 40px 570px 40px 0px;
+    clear: both;
+}
+.textArea{
+  background: none;
+  float: left;
+  border: none;
+  outline: none;
+  color: white;
+}
+::placeholder{
+    color: white;
+    font-size: 20px;
+}
+.Message{
+  clear: both;
+}
+.Message>div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+.sendMessage{
+    width: 170px;
+    height: 35px;
+    color: white;
+    border:1px hidden gray;
+    border-radius: 16px;
+    background-color:  rgb(255, 204, 2);
+}
+.sendMessage:hover{
+    background-color:white;
+    color: black;
+    border: 1px solid gray;
+}
+.contents{
+    width: 280px;
+    height: 150px;
+    border-left: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    align-items: center;  
+}
+#socialNetworks{
+   height: auto;
+   background-color: rgb(26, 29, 35);
+}
+.notworkIcon{
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(160, 167, 178);
+    border-radius: 100%;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notworkIcon>i{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(160, 167, 178);
+}
+.lastt{
+    border-right: 1px solid black !important; 
+}
+.contents:hover.hover1{
+    background-color: red;
+}
+.hover2:hover{
+    background-color: rgb(56, 106, 183);
+}
+.hover3:hover{
+    background-color:rgb(126, 196, 13);
+}
+.hover4:hover{
+    background-color:rgb(229, 225, 6);
+}
+.hover5:hover{
+    background-color:rgb(130, 35, 178);
+}
+footer{
+    padding: 0px;
+background-color: rgb(12, 12, 12);
+}
+.adress{
+    list-style-type: none;
+    padding: 0px;
+}
+.adress i{
+    font-size: 20px;
+    color:rgb(226, 226, 226);
+    margin-right: 20px;
+}
+.adress li{
+    padding-top:10px; 
+}
+.adress span{
+    color:rgb(226, 226, 226);
+}
+.links{
+    list-style-type: none;
+    padding: 0px;
+}
+footer h2{
+    color:white;
+}
+footer a:hover{
+    color: red;
+}
+.links a{
+    text-decoration: none;
+    font-size: 18px;
+    color:rgb(226, 226, 226);
+}
+.links li{
+    margin-top: 10px;
+}
+.footerImages{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footerImages  img{
+height: 100px;
+width: 100px;
+}
+.headerIcons i:hover{
+    color:rgb(229, 225, 6);
+    background-color: red
+}

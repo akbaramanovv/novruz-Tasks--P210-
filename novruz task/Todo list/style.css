@@ -1,0 +1,43 @@
+.todoList{
+    width: 600px;
+    margin: auto;
+    
+}
+.inputUl i{
+opacity: 0;
+}
+.head{
+    width: 600px;
+    text-align: center;
+    border:1px solid blue;
+    background-color: blue;
+    color:white;
+    border-radius: 10px
+}
+#myIcon{
+    opacity: 0;
+}
+.myList{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+.myButton{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+ 
+
+  align-items: flex-end;
+ height: auto;
+  
+}
+.border{
+    height: 200px;
+    overflow: auto;
+}
+#wrapper{
+    list-style-type: none;
+    padding: 0px;
+}

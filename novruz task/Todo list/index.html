@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="todoList mt-5">
+            <h2 class="head py-2">MY TO DO LIST</h2>
+            <ul class="list-group border  list-group-flush my-2">
+
+                <li class=" myList mb-2" >
+                    <span onclick="textStyle(this)" ondblclick="textStyle2(this)" id="mySpan">Crasjusto odio</span>
+                    <i id="myIcon" onmouseover=" mouseOver(this) " onmouseout="mouseOut(this)" onclick="deletItem(this)" class="fas fa-trash-alt"></i>
+                </li>
+
+
+                <li class=" myList mb-2">
+                    <span onclick="textStyle(this)" ondblclick="textStyle2(this)" id="mySpan">Dapibus ac
+                        facilisisin</span>
+                        <i id="myIcon" onmouseover=" mouseOver(this) " onmouseout="mouseOut(this)" onclick="deletItem(this)" class="fas fa-trash-alt"></i>
+                </li>
+
+
+                <li class=" myList  mb-2">
+                    <span onclick="textStyle(this)" ondblclick="textStyle2(this)" id="mySpan">Morbi leo risus</span>
+                    <i id="myIcon" onmouseover=" mouseOver(this) " onmouseout="mouseOut(this)" onclick="deletItem(this)" class="fas fa-trash-alt"></i>
+                </li>
+
+
+                <li class=" myList  mb-2">
+                    <span onclick="textStyle(this)" ondblclick="textStyle2(this)" id="mySpan">Porta ac consectetur
+                        ac</span>
+                        <i id="myIcon" onmouseover=" mouseOver(this) " onmouseout="mouseOut(this)" onclick="deletItem(this)" class="fas fa-trash-alt"></i>
+                </li>
+
+
+                <li class=" myList mb-3">
+                    <span onclick="textStyle(this)" ondblclick="textStyle2(this)" id="mySpan">Vestibulum at eros</span>
+                    <i id="myIcon" onmouseover=" mouseOver(this) " onmouseout="mouseOut(this)" onclick="deletItem(this)" class="fas fa-trash-alt"></i>
+                </li>
+
+
+                <ul id="wrapper" class="inputUl">
+
+                </ul>
+            </ul>
+            <div class="myButton mb-5">
+                <button onclick="getInputValue()" class="btn btn-primary myButton btn-lg">+New Task</button>
+            </div>
+            <input type="text" id="inputLIstt" class="form-control" placeholder="" aria-label=""
+                aria-describedby="basic-addon1">
+
+        </div>
+        <script src="../Todo list/js/script.js"></script>
+    </main>
+</body>
+
+</html>

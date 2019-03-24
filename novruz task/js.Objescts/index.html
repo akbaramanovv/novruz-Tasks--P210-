@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+
+        <div class="container my-5">
+            <h1 class="text-center font-weight-normal">Welcome to Code Academy</h1>
+            <h4 class="border text-center py-3 font-weight-normal bg-info text-white">Nizami küçəsi 203b , AF
+                Buisness House , 2-ci mərtəbə</h4>
+            <h3 class="font-weight-normal mt-3">Information about Code Academy</h3>
+            <div class="row my-4">
+                <div class="col-3"><span>Student Count -</span><span id="sCount">0</span></div>
+                <div class="col-3"><span>Teacher Count - </span><span id="tCount">0</span></div>
+                <div class="col-3"><span>Room Count - </span><span id="rCount">0</span></div>
+                <div class="col-3"><span>Group Count - </span><span id="gCount">0</span></div>
+            </div>
+            <div class="row">
+                <div class="col-12 border border-primary my-5">
+                    <h3 class="my-2">Student</h3>
+                    <h5 class="mt-5 font-weight-normal">Name</h5>
+                    <input id="name" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Surname</h5>
+                    <input id="surname" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Email</h5>
+                    <input id="mail" class="form-control" type="text" placeholder="">
+                    <h3 class="my-5">Adress</h3>
+                    <h5 class="mt-5 font-weight-normal">Street</h5>
+                    <input id="street" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">City</h5>
+                    <input id="city" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Country</h5>
+                    <input id="country" class="form-control" type="text" placeholder="">
+
+
+                    <button onclick="studentInfo()" style="float:right" type="button"
+                        class="btn btn-outline-primary mt-5 btn-lg my-5">Save</button>
+                    <h3 style="clear:both" class="pt-5 text-center mt-5">List of Studend</h3>
+                    <ul id="studentData" class="list-group text-center my-2 ">
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 border border-primary  my-5 ">
+                    <h3 class="my-2">Room</h3>
+                    <h5 class="mt-5 font-weight-normal">Name</h5>
+                    <input id="ooo" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Capacity</h5>
+                    <input id="bbb" class="form-control" type="text" placeholder="">
+                    <button onclick="RoomData()" style="float:right" type="button"
+                        class="btn btn-outline-primary btn-lg my-5">Save</button>
+                    <h3 style="clear:both" class="pt-5 text-center mt-5">List of Room</h3>
+                    <ul id="roomList" class="list-group my-2">
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 border border-primary  my-5 ">
+                    <h3 class="my-2">Group</h3>
+                    <h5 class="mt-5 font-weight-normal">Name</h5>
+                    <input id="GName" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Room</h5>
+                    <div class="input-group mb-3">
+                    <select id="choose" class="custom-select" id="inputGroupSelect02">
+                            
+                           
+                           
+                        </select>
+                    </div>
+                    
+                    <button onclick="groupData()" style="float:right" type="button" class="btn btn-outline-primary btn-lg my-5">Save</button>
+                    <h3 style="clear:both" class="pt-5 text-center mt-5">List of Group</h3>
+                    <ul id="gropList" class="list-group mt-5 pt-5">
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 border border-primary my-5">
+                    <h3 class="my-2">Teacher</h3>
+                    <h5 class="mt-5 font-weight-normal">Name</h5>
+                    <input id="tname" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Surname</h5>
+                    <input id="tsurname" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Email</h5>
+                    <input id="tmail" class="form-control" type="text" placeholder="">
+                    <h5 class="mt-4 font-weight-normal">Groups</h5>
+                    <div class="input-group mb-3">
+                        <select id="choose2" class="custom-select" id="inputGroupSelect02">
+                                <option selected>Choose...</option>
+
+
+                        </select>
+
+                    </div>
+
+
+                    <button onclick="TECHERInfo()" style="float:right" type="button" class="btn btn-outline-primary btn-lg my-5">Save</button>
+                    <h3 style="clear:both" class="pt-5 text-center mt-5">List of Teachers</h3>
+                    <ul id="teacherList" class="list-group mt-5 pt-5">
+
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <script src="../js.Objescts/js/script.js"></script>
+</body>
+
+</html>
